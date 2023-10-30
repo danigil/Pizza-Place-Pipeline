@@ -43,5 +43,7 @@ The NRT info is read by the Node.js server and constantly updated in the view us
 Past orders can be queried from the Elastic Search database in the Search tab by branch name and date.
 
 # Preview
-[Dashboard screenshot](images/dashboard.png)
-[Search screenshot](images/search.png)
+## Dashboard
+![Dashboard screenshot](images/dashboard.PNG)  
+## Search
+![Search screenshot](images/search.PNG)

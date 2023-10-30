@@ -1,0 +1,26 @@
+{
+    "kosher":[
+        "anchovies",
+        "tuna",
+
+        "mozzarella cheese",
+        "bulgarian cheese",
+        "goat cheese",
+        "extra cheese",
+        "parmesan cheese",
+        "gouda cheese",
+
+        "mushrooms",
+        "olives",
+        "onions",
+        "peppers",
+        "pineapple"
+    ],
+    "non_kosher":[
+        "bacon",
+        "chicken",
+        "ground beef",
+        "ham",
+        "pepperoni"
+    ]
+}

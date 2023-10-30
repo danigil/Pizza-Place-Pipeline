@@ -1,0 +1,122 @@
+[
+    {
+        "id": "0",
+        "name": "tel aviv - ibn gabirol",
+        "region": "dan",
+        "kosher": false
+    },
+    {
+        "id": "1",
+        "name": "tel aviv - azrieli",
+        "region": "dan",
+        "kosher": false
+    },
+    {
+        "id": "2",
+        "name": "tel aviv - gordon beach",
+        "region": "dan",
+        "kosher": false
+    },
+    {
+        "id": "3",
+        "name": "ramat gan",
+        "region": "dan",
+        "kosher": true
+    },
+    {
+        "id": "4",
+        "name": "herzeliya",
+        "region": "dan",
+        "kosher": false
+    },
+    {
+        "id": "5",
+        "name": "holon",
+        "region": "dan",
+        "kosher": true
+    },
+    {
+        "id": "6",
+        "name": "kfar saba",
+        "region": "center",
+        "kosher": true
+    },
+    {
+        "id": "7",
+        "name": "jerusalem - talpiyot",
+        "region": "center",
+        "kosher": true
+    },
+    {
+        "id": "8",
+        "name": "jerusalem - har nof",
+        "region": "center",
+        "kosher": true
+    },
+    {
+        "id": "9",
+        "name": "ariel",
+        "region": "center",
+        "kosher": true
+    },
+    {
+        "id": "10",
+        "name": "haifa",
+        "region": "haifa",
+        "kosher": true
+    },
+    {
+        "id": "11",
+        "name": "kiryat mozkin",
+        "region": "haifa",
+        "kosher": false
+    },
+    {
+        "id": "12",
+        "name": "beer sheva - ben gurion university",
+        "region": "south",
+        "kosher": true
+    },
+    {
+        "id": "13",
+        "name": "eilat",
+        "region": "south",
+        "kosher": false
+    },
+    {
+        "id": "14",
+        "name": "kiryat shmona",
+        "region": "north",
+        "kosher": false
+    },
+    {
+        "id": "15",
+        "name": "mt. hermon",
+        "region": "north",
+        "kosher": true
+    },
+    {
+        "id": "16",
+        "name": "tiberias",
+        "region": "north",
+        "kosher": true
+    },
+    {
+        "id": "17",
+        "name": "mizpe ramon",
+        "region": "south",
+        "kosher": true
+    },
+    {
+        "id": "18",
+        "name": "ashkelon",
+        "region": "south",
+        "kosher": false
+    },
+    {
+        "id": "19",
+        "name": "ashdod",
+        "region": "south",
+        "kosher": false
+    }
+]

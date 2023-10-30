@@ -1,0 +1,16 @@
+{
+  "name": "dashboard_server",
+  "version": "1.0.0",
+  "description": "dashboard_server_with_redis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-rdkafka": "^2.15.0",
+    "redis": "^4.6.5",
+    "ws": "^8.12.1"
+  }
+}

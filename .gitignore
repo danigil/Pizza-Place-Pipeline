@@ -1,0 +1,6 @@
+node_modules
+bigml_data
+*.crt
+*.ini
+*.properties
+*.log

@@ -1,0 +1,725 @@
+<!--
+=========================================================
+Material Dashboard - v2.1.2
+=========================================================
+
+Product Page: https://www.creative-tim.com/product/material-dashboard
+Copyright 2020 Creative Tim (https://www.creative-tim.com)
+Coded by Creative Tim
+
+=========================================================
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon.png">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Material Dashboard by Creative Tim
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <!-- CSS Files -->
+  <link href="css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="demo/demo.css" rel="stylesheet" />
+</head>
+
+<body class="">
+  <div class="wrapper ">
+    <div class="sidebar" data-color="danger" data-background-color="white" data-image="images/sidebar-1.jpg">
+      <!--
+        Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
+
+        Tip 2: you can also add an image using data-image tag
+    -->
+      <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
+          Cacophony Pizza
+        </a></div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li class="nav-item active  ">
+            <a class="nav-link" href="/">
+              <i class="material-icons">dashboard</i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/search">
+              <i class="material-icons">search</i>
+              <p>Search</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/analyze">
+              <i class="material-icons">content_paste</i>
+              <p>Analyze</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <a class="navbar-brand" href="javascript:;">Dashboard</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+            <span class="navbar-toggler-icon icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end">
+            <h3 style="color: red" id="last_updated" class="blink-style">Last Updated: 13:53</h3>
+          </div>
+        </div>
+      </nav>
+
+      <style>
+        .blink-style{
+          /* animation: blink-text 0.5s linear infinite; */
+        }
+
+        @keyframes blink-text {
+          0% {
+            opacity: 0;
+            
+          }
+          50% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+      </style>
+
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card card-stats">
+                <div class="card-header card-header-success card-header-icon">
+                  <div class="card-icon">
+                    <i class="material-icons">store</i>
+                  </div>
+                  <p class="card-category">Open Branches</p>
+                  <h3 class="card-title" id="open_branches">15</h3>
+                </div>
+                <div class="card-footer">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card card-stats">
+                <div class="card-header card-header-warning card-header-icon">
+                  <div class="card-icon">
+                    <i class="material-icons">schedule</i>
+                  </div>
+                  <p class="card-category">Average Service Time</p>
+                  <h3 class="card-title" id="avg_service_time">7
+                    <small>minutes</small>
+                  </h3>
+                </div>
+                <div class="card-footer">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card card-stats">
+                <div class="card-header card-header-danger card-header-icon">
+                  <div class="card-icon">
+                    <i class="material-symbols-outlined">order_play</i>
+                  </div>
+                  <p class="card-category">Total Open Orders</p>
+                  <h3 class="card-title" id="total_open_orders">3</h3>
+                </div>
+                <div class="card-footer">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card card-stats">
+                <div class="card-header card-header-info card-header-icon">
+                  <div class="card-icon">
+                    <i class="material-symbols-outlined">order_approve</i>
+                  </div>
+                  <p class="card-category">Total Orders Today</p>
+                  <h3 class="card-title" id="total_orders_today">78</h3>
+                </div>
+                <div class="card-footer">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card card-chart">
+                <div class="card-header">
+                  <canvas id="toppingsChart"></canvas>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Top 5 Pizza Toppings</h4>
+                  <p class="card-category">
+                    by KG</p>
+                </div>
+                <div class="card-footer">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-chart">
+                <div class="card-header">
+                  <canvas id="fastestChart"></canvas>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Top 5 Fastest Branches</h4>
+                  <p class="card-category">by Shortest Average Service Time</p>
+                </div>
+                <div class="card-footer">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-chart">
+                <div class="card-header" style="height:288px; width:288px; margin: auto;">
+                  <canvas id="distChart"></canvas>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Order Distribution by Region</h4>
+                </div>
+                <div class="card-footer">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4" style="margin: auto;">
+              <div class="card card-chart">
+                <div class="card-header">
+                  <canvas id="orderAmountChart"></canvas>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Orders throughout the Day</h4>
+                </div>
+                <div class="card-footer">
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <script>
+    async function play_animation(){
+      start_animation();
+      setTimeout(() => {
+          stop_animation();
+      }, 1000);
+    }
+
+    function start_animation(){
+      for (i = 0; i < slides.length; i++) {
+        //slides[i].classList.remove("blink-style");
+        slides[i].style.animation="blink-text 0.5s linear infinite";
+      }
+    }
+  
+    function stop_animation(){
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.animation="";
+      }
+    }
+    var slides = document.getElementsByClassName("blink-style");
+    stop_animation();
+  </script>
+  <!--   Core JS Files   -->
+  <script src="js/core/jquery.min.js"></script>
+  <script src="js/core/popper.min.js"></script>
+  <script src="js/core/bootstrap-material-design.min.js"></script>
+  <script src="js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!-- Plugin for the momentJs  -->
+  <script src="js/plugins/moment.min.js"></script>
+  <!--  Plugin for Sweet Alert -->
+  <script src="js/plugins/sweetalert2.js"></script>
+  <!-- Forms Validations Plugin -->
+  <script src="js/plugins/jquery.validate.min.js"></script>
+  <!-- Plugin for the Wizard, full documentation here: https://github.com/VinceG/twitter-bootstrap-wizard -->
+  <script src="js/plugins/jquery.bootstrap-wizard.js"></script>
+  <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+  <script src="js/plugins/bootstrap-selectpicker.js"></script>
+  <!--  Plugin for the DateTimePicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
+  <script src="js/plugins/bootstrap-datetimepicker.min.js"></script>
+  <!--  DataTables.net Plugin, full documentation here: https://datatables.net/  -->
+  <script src="js/plugins/jquery.dataTables.min.js"></script>
+  <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+  <script src="js/plugins/bootstrap-tagsinput.js"></script>
+  <!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+  <script src="js/plugins/jasny-bootstrap.min.js"></script>
+  <!--  Full Calendar Plugin, full documentation here: https://github.com/fullcalendar/fullcalendar    -->
+  <script src="js/plugins/fullcalendar.min.js"></script>
+  <!-- Vector Map plugin, full documentation here: http://jvectormap.com/documentation/ -->
+  <script src="js/plugins/jquery-jvectormap.js"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="js/plugins/nouislider.min.js"></script>
+  <!-- Include a polyfill for ES6 Promises (optional) for IE11, UC Browser and Android browser support SweetAlert -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+  <!-- Library for adding dinamically elements -->
+  <script src="js/plugins/arrive.min.js"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Chartist JS -->
+  <script src="js/plugins/chartist.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="js/material-dashboard.js?v=2.1.2" type="text/javascript"></script>
+  <!-- Material Dashboard DEMO methods, don't include it in your project! -->
+  <script src="demo/demo.js"></script>
+
+  <script>
+    function updateLastUpdated(){
+      const date = new Date();
+      var hours = date.getHours().toString();
+      if (hours.length == 1)
+        hours = "0" + hours;
+      
+      var minutes = date.getMinutes().toString();
+      if (minutes.length == 1)
+        minutes = "0" + minutes;
+
+      let currentDate = `${hours}:${minutes}`;
+      $("#last_updated").html(`Last Updated: ${currentDate}`);
+    }
+  </script>
+
+  <!-- <script>
+    $(document).ready(function() {
+      $().ready(function() {
+        $sidebar = $('.sidebar');
+
+        $sidebar_img_container = $sidebar.find('.sidebar-background');
+
+        $full_page = $('.full-page');
+
+        $sidebar_responsive = $('body > .navbar-collapse');
+
+        window_width = $(window).width();
+
+        fixed_plugin_open = $('.sidebar .sidebar-wrapper .nav li.active a p').html();
+
+        if (window_width > 767 && fixed_plugin_open == 'Dashboard') {
+          if ($('.fixed-plugin .dropdown').hasClass('show-dropdown')) {
+            $('.fixed-plugin .dropdown').addClass('open');
+          }
+
+        }
+
+        $('.fixed-plugin a').click(function(event) {
+          // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
+          if ($(this).hasClass('switch-trigger')) {
+            if (event.stopPropagation) {
+              event.stopPropagation();
+            } else if (window.event) {
+              window.event.cancelBubble = true;
+            }
+          }
+        });
+
+        $('.fixed-plugin .active-color span').click(function() {
+          $full_page_background = $('.full-page-background');
+
+          $(this).siblings().removeClass('active');
+          $(this).addClass('active');
+
+          var new_color = $(this).data('color');
+
+          if ($sidebar.length != 0) {
+            $sidebar.attr('data-color', new_color);
+          }
+
+          if ($full_page.length != 0) {
+            $full_page.attr('filter-color', new_color);
+          }
+
+          if ($sidebar_responsive.length != 0) {
+            $sidebar_responsive.attr('data-color', new_color);
+          }
+        });
+
+        $('.fixed-plugin .background-color .badge').click(function() {
+          $(this).siblings().removeClass('active');
+          $(this).addClass('active');
+
+          var new_color = $(this).data('background-color');
+
+          if ($sidebar.length != 0) {
+            $sidebar.attr('data-background-color', new_color);
+          }
+        });
+
+        $('.fixed-plugin .img-holder').click(function() {
+          $full_page_background = $('.full-page-background');
+
+          $(this).parent('li').siblings().removeClass('active');
+          $(this).parent('li').addClass('active');
+
+
+          var new_image = $(this).find("img").attr('src');
+
+          if ($sidebar_img_container.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
+            $sidebar_img_container.fadeOut('fast', function() {
+              $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
+              $sidebar_img_container.fadeIn('fast');
+            });
+          }
+
+          if ($full_page_background.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
+            var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
+
+            $full_page_background.fadeOut('fast', function() {
+              $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
+              $full_page_background.fadeIn('fast');
+            });
+          }
+
+          if ($('.switch-sidebar-image input:checked').length == 0) {
+            var new_image = $('.fixed-plugin li.active .img-holder').find("img").attr('src');
+            var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
+
+            $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
+            $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
+          }
+
+          if ($sidebar_responsive.length != 0) {
+            $sidebar_responsive.css('background-image', 'url("' + new_image + '")');
+          }
+        });
+
+        $('.switch-sidebar-image input').change(function() {
+          $full_page_background = $('.full-page-background');
+
+          $input = $(this);
+
+          if ($input.is(':checked')) {
+            if ($sidebar_img_container.length != 0) {
+              $sidebar_img_container.fadeIn('fast');
+              $sidebar.attr('data-image', '#');
+            }
+
+            if ($full_page_background.length != 0) {
+              $full_page_background.fadeIn('fast');
+              $full_page.attr('data-image', '#');
+            }
+
+            background_image = true;
+          } else {
+            if ($sidebar_img_container.length != 0) {
+              $sidebar.removeAttr('data-image');
+              $sidebar_img_container.fadeOut('fast');
+            }
+
+            if ($full_page_background.length != 0) {
+              $full_page.removeAttr('data-image', '#');
+              $full_page_background.fadeOut('fast');
+            }
+
+            background_image = false;
+          }
+        });
+
+        $('.switch-sidebar-mini input').change(function() {
+          $body = $('body');
+
+          $input = $(this);
+
+          if (md.misc.sidebar_mini_active == true) {
+            $('body').removeClass('sidebar-mini');
+            md.misc.sidebar_mini_active = false;
+
+            $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
+
+          } else {
+
+            $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar('destroy');
+
+            setTimeout(function() {
+              $('body').addClass('sidebar-mini');
+
+              md.misc.sidebar_mini_active = true;
+            }, 300);
+          }
+
+          // we simulate the window Resize so the charts will get updated in realtime.
+          var simulateWindowResize = setInterval(function() {
+            window.dispatchEvent(new Event('resize'));
+          }, 180);
+
+          // we stop the simulation of Window Resize after the animations are completed
+          setTimeout(function() {
+            clearInterval(simulateWindowResize);
+          }, 1000);
+
+        });
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+      // Javascript method's body can be found in assets/js/demos.js
+      md.initDashboardPageCharts();
+
+    });
+  </script> -->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  distCTX = document.getElementById('distChart');
+
+  var distChart = new Chart(distCTX, {
+    type: 'pie',
+    data: {
+      labels: [
+      'Dan',
+      'Center',
+      'Haifa',
+      'North',
+      'South'
+    ],
+      datasets: [{
+        // label: '# of Votes',
+        data: [12, 19, 3, 5, 2],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      responsive: true
+    }
+  });
+
+  fastestCTX = document.getElementById('fastestChart');
+  var fastestChart = new Chart(fastestCTX, {
+    type: 'bar',
+    data: {
+      labels: [
+      'Eilat',
+      'Tel Aviv',
+      'Haifa',
+      'Carmiel',
+      'Rishon LeZion'
+    ],
+    datasets: [{
+    axis: 'y',
+    data: [3, 4, 4, 7, 10],
+    fill: false,
+    backgroundColor: [
+      'rgba(255, 99, 132, 0.2)',
+      'rgba(255, 159, 64, 0.2)',
+      'rgba(255, 205, 86, 0.2)',
+      'rgba(75, 192, 192, 0.2)',
+      'rgba(54, 162, 235, 0.2)',
+      'rgba(153, 102, 255, 0.2)',
+      'rgba(201, 203, 207, 0.2)'
+    ],
+    borderColor: [
+      'rgb(255, 99, 132)',
+      'rgb(255, 159, 64)',
+      'rgb(255, 205, 86)',
+      'rgb(75, 192, 192)',
+      'rgb(54, 162, 235)',
+      'rgb(153, 102, 255)',
+      'rgb(201, 203, 207)'
+    ],
+    borderWidth: 1
+  }]
+    },
+    options: {
+      indexAxis: 'y',
+
+      plugins: {
+        legend: {
+          display: false
+        }
+      }
+    }
+  });
+
+  toppingsCTX = document.getElementById('toppingsChart');
+  var toppingsChart = new Chart(toppingsCTX, {
+    type: 'bar',
+    data: {
+      labels: [
+      'Mushrooms',
+      'Onion',
+      'Mozzarella',
+      'Olives',
+      'Corn'
+    ],
+    datasets: [{
+    axis: 'y',
+    data: [10, 8, 7, 7, 5],
+    fill: false,
+    backgroundColor: [
+      'rgba(255, 99, 132, 0.2)',
+      'rgba(255, 159, 64, 0.2)',
+      'rgba(255, 205, 86, 0.2)',
+      'rgba(75, 192, 192, 0.2)',
+      'rgba(54, 162, 235, 0.2)',
+      'rgba(153, 102, 255, 0.2)',
+      'rgba(201, 203, 207, 0.2)'
+    ],
+    borderColor: [
+      'rgb(255, 99, 132)',
+      'rgb(255, 159, 64)',
+      'rgb(255, 205, 86)',
+      'rgb(75, 192, 192)',
+      'rgb(54, 162, 235)',
+      'rgb(153, 102, 255)',
+      'rgb(201, 203, 207)'
+    ],
+    borderWidth: 1
+  }]
+    },
+    options: {
+      indexAxis: 'y',
+
+      plugins: {
+        legend: {
+          display: false
+        }
+      }
+    }
+  });
+
+  orderAmountCTX = document.getElementById('orderAmountChart');
+  var orderAmountChart = new Chart(orderAmountCTX, {
+    type: 'line',
+    data: {
+      labels: [
+      '10:00',
+      '12:00',
+      '14:00',
+      '16:00',
+      '18:00'
+    ],
+      datasets: [{
+        // label: '# of Votes',
+        data: [12, 19, 3, 5, 2],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      plugins: {
+        legend: {
+          display: false
+        }
+      }
+    }
+  });
+</script>
+
+<script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+
+<!-- <script>
+  function updateCharts(){
+    for(var i=0;i<Math.min(5,distChart.data.datasets[0].data.length,Object.values(region_distributions).length);i++){
+      distChart.data.datasets[0].data[i]=Object.values(region_distributions)[i];
+    }
+
+    distChart.data.labels=Object.keys(region_distributions)
+    distChart.update();
+
+    
+  }
+</script> -->
+<script>
+  var socket = io();
+  socket.on('nrt_info', function(msg) {
+    var obj = JSON.parse(msg);
+
+    updateLastUpdated();
+    $('#open_branches').html(obj["open_branches"].toString());
+    $('#avg_service_time').html(obj["avg_service_time"].toString());
+    $('#total_orders_today').html(obj["total_orders_today"].toString());
+    $('#total_open_orders').html(obj["open_orders"].toString());
+
+    const region_distributions = obj["region_distributions"];
+    //$('#open_branches').html(region_distributions["dan"].toString());
+    console.assert(region_distributions);
+    // chart.data.datasets.forEach((dataset) => {
+    //     dataset.data.push(data);
+    // });
+    //console.assert(distChart.data.datasets[0].data=obj["region_distributions"]);
+    
+    for(var i=0;i<Math.min(5,distChart.data.datasets[0].data.length,Object.values(region_distributions).length);i++){
+      distChart.data.datasets[0].data[i]=Object.values(region_distributions)[i];
+    }
+    distChart.data.labels=Object.keys(region_distributions);
+    distChart.update();
+
+    fastestLabels=[]
+    fastestValues=[]
+    for(var i=0;i<Math.min(5,obj["fastest_branches"].length);i++){
+      fastestLabels.push(obj["fastest_branches"][i][0]);
+      fastestValues.push(obj["fastest_branches"][i][1]);
+    }
+    //fastestChartdata.data.labels=fastestLabels;
+    fastestChart.data.datasets[0].data=fastestValues;
+    fastestChart.data.labels=fastestLabels;
+
+    // for(var i=0;i<Math.min(5,fastestChart.data.datasets[0].data.length,fastestValues.length);i++){
+    //   fastestChart.data.datasets[0].data[i]=fastestValues[i];
+    //   fastestChart.data.labels[i]=fastestLabels[i];
+    // }
+    fastestChart.update();
+
+    toppingsLabels=[];
+    toppingsValues=[];
+
+    for(var i=0;i<Math.min(5,obj["top_toppings"].length);i++){
+      toppingsLabels.push(obj["top_toppings"][i][0]);
+      toppingsValues.push(obj["top_toppings"][i][1]);
+    }
+    toppingsChart.data.datasets[0].data=toppingsValues;
+    toppingsChart.data.labels=toppingsLabels;
+
+    toppingsChart.update();
+
+    //let i = 0;
+    orderAmountValues = [];
+    orderAmountChart.data.labels.forEach(element => {
+      let hour = "";
+      if (element.charAt(0)==='0'){
+        hour = element.split(':')[0].charAt(1);
+      }
+      else{
+        hour = element.split(':')[0];
+      }
+      orderAmountValues.push(Number((obj["order_amount_per_hour"][hour])));
+      //orderAmountChart.data.datasets[0].data[i]=;
+      //i++;
+    });
+    orderAmountChart.data.datasets[0].data=orderAmountValues;
+    orderAmountChart.update();
+
+    play_animation();
+    //console.alert(region_distributions[0].toString());
+});
+
+</script>
+</body>
+
+</html>
